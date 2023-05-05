@@ -66,7 +66,7 @@ function start_stop(){
     }
 }
 
-function create_lap(){
+function create_lap_or_reset(){
     if (lap_reset_btn.innerText == "Lap"){
         let lap_text = time.innerText;
 
@@ -98,4 +98,4 @@ function create_lap(){
 
 // Event Listeners
 start_stop_btn.onclick = start_stop;
-lap_reset_btn.onclick = create_lap;
+lap_reset_btn.onclick = create_lap_or_reset;
